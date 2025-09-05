@@ -7,8 +7,7 @@ Artist.speak = function () {
     console.log("I am an artist");
 }
 Painter.paint = function () {
-    document.body.style.background = rColor;
-    rcolor = function getRandomHexColor() {
+    let rcolor = function getRandomHexColor() {
         // Generate random values for RGB
         const r = Math.floor(Math.random() * 256);
         const g = Math.floor(Math.random() * 256);
@@ -21,4 +20,5 @@ Painter.paint = function () {
         // Combine them into a full hex color code
         return `#${hexR}${hexG}${hexB}`;
     }
+    document.body.style.background = rColor;
 }

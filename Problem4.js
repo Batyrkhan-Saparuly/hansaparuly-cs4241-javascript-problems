@@ -2,7 +2,7 @@ const btnfour = document.getElementById("btnfour");
 btnfour.style.width = "40px";
 btnfour.style.height = "40px";
 btnfour.addEventListener("click", function swap(event) {
-    oldBtn = event.currentTarget;
+    const oldBtn = event.currentTarget;
     const newBtn = document.createElement("button");
     newBtn.type = "button";
     newBtn.style.width = "40px";
@@ -12,5 +12,5 @@ btnfour.addEventListener("click", function swap(event) {
     }
     newBtn.textContent = randomLabel();
     newBtn.addEventListener("click", swap);
-    btnfour.replaceWith(newBtn, oldBtn);
+    oldBtn.replaceWith(newBtn, oldBtn);
 });

@@ -12,5 +12,5 @@ btnfour.addEventListener("click", function swap(event) {
     }
     newBtn.textContent = randomLabel();
     newBtn.addEventListener("click", swap);
-    parent.replaceChild(newBtn, oldBtn);
+    btnfour.replaceWith(newBtn, oldBtn);
 });
